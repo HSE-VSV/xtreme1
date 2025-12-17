@@ -84,9 +84,9 @@
                     style="width: 200px; margin: 0px; margin-top: 5px"
                     v-model:value="config.pointSize"
                     :tip-formatter="formatter"
-                    :min="1"
+                    :min="0.1"
                     :max="10"
-                    :step="0.1"
+                    :step="0.05"
                     @change="() => update('pointSize')"
                 />
                 <div class="title3"
