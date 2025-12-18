@@ -86,7 +86,7 @@
                     :tip-formatter="formatter"
                     :min="0.1"
                     :max="10"
-                    :step="0.05"
+                    :step="0.1"
                     @change="() => update('pointSize')"
                 />
                 <div class="title3"
