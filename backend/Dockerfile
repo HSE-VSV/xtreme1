@@ -4,7 +4,7 @@ WORKDIR /build
 ADD . .
 RUN --mount=type=cache,target=/root/.m2 mvn package
 
-FROM openjdk:11-jre
+FROM eclipse-temurin:11-jre-jammy
 RUN apt update && \
     apt install -y iputils-ping curl wget netcat python3 python3-pip git
 RUN pip3 install --upgrade --force-reinstall git+https://github.com/xtreme1-io/xtreme1-sdk.git@6b53a73
